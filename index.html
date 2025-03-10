@@ -172,7 +172,12 @@
   </div>
 </section>
 
-
+<section class="hero teaser">
+    <div class="hero-body", style="width:80%;margin: 0 auto;">
+        <img src="./static/images/cover_page.jpg", width="80%">
+    </div>
+</section>
+  
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -200,18 +205,6 @@
     <!--/ Abstract. -->
 </section>
   
-<section class="hero teaser">
-    <div class="hero-body", style="width:80%;margin: 0 auto;">
-        <img src="./static/images/cover_page.jpg", width="80%">
-    </div>
-</section>
-
-  
-<section class="hero teaser">
-    <div class="hero-body", style="width:80%;margin: 0 auto;">
-        <img src="./static/images/data_gen_page.jpg", width="80%">
-    </div>
-</section>
   
 <section>
       <!-- Paper video. -->
@@ -231,18 +224,62 @@
   </div>
 </section>
 
+<section>
+      <!-- Data Gen -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Multi-modal Input Generation</h2>
+        <div class="content has-text-justified">
+          <p>
+            The multi-modal input data is generated from the original scene point cloud. The point clouds are projected into the continuous RGB frames and 
+            then uniformly downsample to fixed-length frames as the VLM's RGB input. The RGB frames are further captioned with off-the-shelf model to generate scene captions as the LLM's input. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section class="hero teaser">
+    <div class="hero-body", style="width:80%;margin: 0 auto;">
+        <img src="./static/images/data_gen_page.jpg", width="80%">
+    </div>
+</section>
+  
+
+
+
+<section>
+      <!-- QA Gen -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">ScanReQA Generation</h2>
+        <div class="content has-text-justified">
+          <p>
+            ScanReQA includes RelSpatialQA and AbsSpatialQA, which evaluate 3D LLMs' reasoning capacities for relative spatial relationships and absolute 3D coordinates. 
+            RelSpatialQA is generated from the forward and backward spatial relationship triplets, requiring the model to understand the binary spatial relationships from 
+            two opposite perspectives. AbsSpatialQA is derived from the 3D visual grounding tasks, but is more challenging. The model not only need to reason for the referred 
+            object, but also choose the object coordination from 4 options. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="hero teaser">
     <div class="hero-body", style="width:80%;margin: 0 auto;">
         <img src="./static/images/qa_gen_v2.jpg", width="80%">
     </div>
 </section>
+  
 
 
 <section>
       <!-- QA Gen -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">ScanReQA Generation</h2>
+        <h2 class="title is-3">Experiment</h2>
         <div class="content has-text-justified">
           <p>
             ScanReQA includes RelSpatialQA and AbsSpatialQA, which evaluate 3D LLMs' reasoning capacities for relative spatial relationships and absolute 3D coordinates. 
@@ -255,33 +292,12 @@
     </div>
   </div>
 </section>
-
-
 <section class="hero teaser">
     <div class="hero-body", style="width:80%;margin: 0 auto;">
         <img src="./static/images/em_multi_modal_page.jpg", width="80%">
     </div>
 </section>
-
-
-<section>
-      <!-- QA Gen -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">ScanReQA Generation</h2>
-        <div class="content has-text-justified">
-          <p>
-            ScanReQA includes RelSpatialQA and AbsSpatialQA, which evaluate 3D LLMs' reasoning capacities for relative spatial relationships and absolute 3D coordinates. 
-            RelSpatialQA is generated from the forward and backward spatial relationship triplets, requiring the model to understand the binary spatial relationships from 
-            two opposite perspectives. AbsSpatialQA is derived from the 3D visual grounding tasks, but is more challenging. The model not only need to reason for the referred 
-            object, but also choose the object coordination from 4 options. 
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+  
 <section class="hero teaser">
     <div class="hero-body", style="width:80%;margin: 0 auto;">
         <img src="./static/images/multi_modal_ablation.jpg", width="80%">
