@@ -281,11 +281,10 @@
       <div class="column">
         <div class="content has-text-justified">
           <p>
-            <b>Evaluation results on ScanQA, SQA3D and RelSpatialQA</b>. 3D LLMs fail to outperform 
-            other models with vision-only or text-only inputs. The zero-shot LLMs achieve the 
-            best results on RelSpatialQA while the fine-tuned VLMs outperform other methods on 
-            ScanQA and SQA3D. In the table, all models have significantly low accuracies in binary 
-            spatial relationship reasoning and absolute coordinate prediction.
+            (1) overall accuracy and recall are extremely low, at only 8.3% and 12.7%, respectively; 
+            (2) LLMs achieve the highest accuracy while zero-shot VLMs achieve the lowest, with 3D LLMs falling between them;
+            (3) Most 3D LLMs achieve near-zero accuracy on AbsSpatialQA. Even the best-performing model, 3D-LLM, only reaches the accuracy of 24.2%, 
+            which is lower than random guessing (25%).
           </p>
         </div>
       </div>
@@ -305,7 +304,7 @@
       <!-- Teaser -->
       <div class="columns is-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">ScanReQA Generation</h2>
+          <h2 class="title is-3">Ablation Study</h2>
           <div class="content has-text-justified">
           <p>
             <b>Ablations of Multi-modal Combinations</b>. 3D LLMs with multi-view images input are more sensitive to 
