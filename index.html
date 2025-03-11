@@ -327,30 +327,34 @@
     
   </div>
 </section>
-  
 
-<section>
-      <!-- QA Gen -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Experiment</h2>
-        <div class="content has-text-justified">
+
+    <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Teaser -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">ScanReQA Generation</h2>
+          <div class="content has-text-justified">
           <p>
-            <b>Ablations of Multi-modal Combinations</b>. 3D LLMs with multi-view images input are more sensitive to visual modality while those with RGB point clouds are more affected by the point cloud modality. 
-            The results of Chat-Scene and Chat-3D demonstrate that the model solely relies on text input could even outperform multimodal input on 3D spatial reasoning tasks. All 3D LLMs, except 3D-LLM, achieve higher accuracy 
-            with PVTI than with PVI, indicating that redundancy in the text modality enhances spatial reasoning performance, supporting the extension of this conclusion from VLMs to 3D LLMs.
+            <b>Ablations of Multi-modal Combinations</b>. 3D LLMs with multi-view images input are more sensitive to 
+            visual modality while those with RGB point clouds are more affected by the point cloud modality. 
+            The results of Chat-Scene and Chat-3D demonstrate that the model solely relies on text input could 
+            even outperform multimodal input on 3D spatial reasoning tasks. All 3D LLMs, except 3D-LLM, achieve higher accuracy 
+            with PVTI than with PVI, indicating that redundancy in the text modality enhances spatial reasoning 
+            performance, supporting the extension of this conclusion from VLMs to 3D LLMs.
           </p>
+          </div>
+          <div style="width: 100%; margin: 0 auto;">
+              <img src="./static/images/multi_modal_ablation.jpg" width="100%">
+          </div>
         </div>
       </div>
+      <!--/ Data -->
     </div>
-  </div>
-</section>
+  </section>
   
-<section class="hero teaser">
-    <div class="hero-body", style="width:80%;margin: 0 auto;">
-        <img src="./static/images/multi_modal_ablation.jpg", width="80%">
-    </div>
-</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
